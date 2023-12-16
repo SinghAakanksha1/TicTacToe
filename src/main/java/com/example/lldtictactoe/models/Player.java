@@ -1,0 +1,27 @@
+package com.example.lldtictactoe.models;
+
+public class Player {
+
+    private char symbol;
+    private String name;
+    private PlayerType type;
+
+    public Player(String name , char symbol , PlayerType playerType){
+        this.name = name ;
+        this.symbol = symbol ;
+        this.type = playerType;
+
+    }
+    public char getSymbol() {
+        return symbol;
+    }
+    public void setSymbol (char symbol){
+        this.symbol = symbol;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setname (String name ){
+        this.name = name ;
+    }
+}
