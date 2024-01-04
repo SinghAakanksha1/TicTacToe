@@ -1,5 +1,7 @@
 package com.example.lldtictactoe.models;
 
+import java.util.Scanner;
+
 public class Player {
 
     private char symbol;
@@ -23,5 +25,16 @@ public class Player {
     }
     public void setname (String name ){
         this.name = name ;
+    }
+
+    public Move decideMove(Board board) {
+        //get the input from the user where to make the next move
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(this.getName()+"'s turn , please give the row");
+        int row = scanner.nextInt();
+        System.out.println(this.getName()+"'s turn , please give the column");
+        int col = scanner.nextInt();
+        return new Move(this , new Cell(row , col));
+
     }
 }
