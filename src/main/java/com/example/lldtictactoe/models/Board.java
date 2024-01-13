@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Board {
+    private List<List<Cell>> board;
     public Board(int dimension){
         this.board = new ArrayList<>();
         for(int i=0 ; i<dimension ; i++){
@@ -14,7 +15,7 @@ public class Board {
         }
 
     }
-    private List<List<Cell>> board;
+
     public List<List<Cell>> getBoard(){
 
         return board;
@@ -31,6 +32,7 @@ public class Board {
 
                 }
                 else{
+                    System.out.println("required symbol"+ this.board.get(i).get(j).getplayer().getSymbol());
                     System.out.print("|"+this.board.get(i).get(j).getplayer().getSymbol()+"|");
                 }
             }

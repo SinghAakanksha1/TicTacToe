@@ -84,9 +84,8 @@ public class Game {
         return players;
     }
 
-    public Game setPlayers(List<Player> players) {
+    public void setPlayers(List<Player> players) {
         this.players = players;
-        return this;
 
     }
 
@@ -106,6 +105,7 @@ public class Game {
     }
     public void setGameStatus(GameStatus gameStatus)
     {
+
         this.gameStatus = gameStatus;
     }
     public int getNextPlayerIndex() {
@@ -141,6 +141,7 @@ public class Game {
     }
 
     public List<Player> getPlayers() {
+
         return players;
     }
 

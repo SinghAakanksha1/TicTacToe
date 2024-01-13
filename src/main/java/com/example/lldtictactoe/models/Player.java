@@ -6,6 +6,8 @@ public class Player {
 
     private char symbol;
     private String name;
+
+
     private PlayerType type;
 
     public Player(String name , char symbol , PlayerType playerType){
@@ -14,17 +16,35 @@ public class Player {
         this.type = playerType;
 
     }
+
     public char getSymbol() {
+//        System.out.println("required symbol "+ symbol);
         return symbol;
     }
-    public void setSymbol (char symbol){
-        this.symbol = symbol;
-    }
+
+
     public String getName(){
+
         return name;
     }
-    public void setname (String name ){
-        this.name = name ;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSymbol (char symbol){
+
+        this.symbol = symbol;
+    }
+
+
+    public PlayerType getType() {
+
+        return type;
+    }
+
+    public void setType(PlayerType type) {
+
+        this.type = type;
     }
 
     public Move decideMove(Board board) {

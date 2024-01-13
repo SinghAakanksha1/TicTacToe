@@ -51,7 +51,7 @@ public class LldTicTacToeApplication {
             //display the board to current player to make the move
             System.out.println("this is the current board");
             gameController.displayBoard(game);
-            System.out.println("Do you want to undo ? y/n");
+            System.out.println("D o you want to undo ? y/n");
             String isUndo =sc.next();
             if(isUndo.charAt(0)=='y'){
                 gameController.undo(game);

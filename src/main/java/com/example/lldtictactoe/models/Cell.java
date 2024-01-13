@@ -12,7 +12,7 @@ public class Cell {
     }
     public Player getplayer(){
 
-        return player ;
+        return this.player ;
     }
     public void setPlayer(Player player){
         this.player = player;

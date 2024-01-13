@@ -39,7 +39,8 @@ public class OrderOneWinningStrategy implements GameWinningStrategy{
         if(!rowSymbolCounts.get(row).containsKey(symbol)){
             rowSymbolCounts.get(row).put(symbol , 0);
         }
-        rowSymbolCounts.get(row).put(symbol , colSymbolCounts.get(col).get(symbol)+1);
+
+        rowSymbolCounts.get(row).put(symbol , rowSymbolCounts.get(col).get(symbol)+1);
 
         if(!colSymbolCounts.get(col).containsKey(symbol)){
             colSymbolCounts.get(col).put(symbol , 0);
